@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('assets/images/visite-aeroport-cdg-acces-en-zone-de-surete-e1582908099454.jpg');
+    background-size: cover; /* Pour couvrir toute la surface */
+    background-position: center; /* Pour centrer l'image */
+    background-color: #f2f2f2; /* Couleur de secours au cas où l'image ne se charge pas */
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    background-color: #fff;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin: 5px 0;
+}
+
+/* Style pour les mobiles */
+@media screen and (max-width: 600px) {
+    form {
+        width: 90%;
+    }
+}
