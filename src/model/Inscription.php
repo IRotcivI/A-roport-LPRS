@@ -128,7 +128,7 @@ class Inscription
 
     public function Inscription ()
     {
-        $bdd = new PDO('mysql:host=localhost:3307;dbname=lprs_aeroport;charset=utf8', 'root', '');
+        $bdd = new PDO('mysql:host=localhost:3306;dbname=lprs_aeroport;charset=utf8', 'root', '');
         $verif = $bdd ->prepare("SELECT * FROM utilisateurs WHERE mail = :mail");
         $verif -> execute(array(
             'mail'=>$this->getMail(),
@@ -139,7 +139,7 @@ class Inscription
         }
         else
         {
-            $requete = $bdd -> prepare("INSERT INTO utilisateurs (nom,prenom,mail,mdp,naissance,rue,cp,ville) VALUES (:nom,:prenom,:mail,:mdp,:date,:rue,:cp,:ville)");
+            $requete = $bdd -> prepare("INSERT INTO utilisateurs (nom,prenom,mail,mdp,naissance,rue,cp,ville) VALUES (:nom,:prenom,:mail,:mdp,:naissance,:rue,:cp,:ville)");
             $requete -> execute(array(
                 'nom'=>$this->getNom(),
                 'prenom'=>$this->getPrenom(),
@@ -154,6 +154,13 @@ class Inscription
         }
     }
 
+    private function getMail()
+    {
+    }
+
+    private function getMdp()
+    {
+    }
 
 
 }
