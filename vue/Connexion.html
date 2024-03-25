@@ -21,11 +21,19 @@
             font-size:16px;
             letter-spacing:1px;
         }
+        img{
+
+            max-width: 100%;
+            height: auto;
+        }
         #top{
             background-image:url('https://img.freepik.com/photos-gratuite/terminal-aeroport_1417-1456.jpg?w=1060&t=st=1710171347~exp=1710171947~hmac=217e447dbc7bca4c515780662c68c30a6f7b0c5b274d53b734f05d2a2dc5b332');">
         background: #152e3b;
-            padding-top:15px;
-            padding-bottom:350px;
+            padding-top:1px;
+            padding-bottom:250px;
+            background-size: 1300px;
+            background-repeat: no-repeat;
+            background-origin: content-box;
         }
         .top_main { text-align:center; }
         .top_1 { text-align:center; }
@@ -44,7 +52,8 @@
         <div class="row">
             <div class="top_main clearfix">
                 <div class="top_1 text-right clearfix"  style="color: #152e3b">
-                    <span><img alt="Logo" src="../assets/images/Logo%20Aeroport.avif" width="7%"  align="left-center"></span>
+                    <span><img alt="Logo" src="../assets/images/Logo%20Aeroport.avif" width="7%"  align="left"></span>
+                    <br><br><br><br>
                     <h1 style="font-size:40px; color:#152e3b; margin:10px;">Page de connexion Aéroport</h1>
                     <br>
                     <form method="POST" action="../src/control/traitConnexion.php">
@@ -79,5 +88,4 @@
     </div>
 </section>
 </body>
-</head>
 </html>
