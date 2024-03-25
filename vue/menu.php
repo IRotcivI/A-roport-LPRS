@@ -25,28 +25,48 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+        <style>
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #4fa3e3;
+            }
+
+            li {
+                float: left;
+            }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover:not(.active) {
+                background-color: #feffff;
+            }
+
+            .active {
+                background-color: #111bbd;
+            }
+        </style>
+
+
+
+<ul>
+
+    <li><a class="active" href="#home">Menu</a></li>
+    <li><a href="#news">Profil</a></li>
+    <li><a href="Connexion.html" >Connexion</a></li>
+    <li><a href="Inscription.html" >Inscription</a></li>
+</ul>
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Menu</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">profil</a>
-            </li>
-            <li class="nav-item dropdown">
-
-            </li>
-        </ul>
-    </div>
-</nav>
 <div id="booking" class="section">
     <div class="section-center">
         <div class="container">
