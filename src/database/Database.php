@@ -8,7 +8,7 @@ class Database
      */
     public function __construct()
     {
-        $this->bdd = new PDO('mysql:host=localhost:3306;dbname=lprs_aeroport;charset=utf8', 'root', '');
+        $this->bdd = new PDO('mysql:host=localhost:3307;dbname=lprs_aeroport;charset=utf8', 'root', '');
     }
 
     public function getBdd()
