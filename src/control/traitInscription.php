@@ -1,12 +1,10 @@
 <?php
 include '../database/Database.php';
-include '../model/User.php';
+include '../model/Utilisateur.php';
 
-
-//CODE
-$ins = new \model\User([
+$ins = new \model\Utilisateur([
     'nom' => $_POST['nom'],
-   'prenom' => $_POST['prenom'],
+    'prenom' => $_POST['prenom'],
     'mail' => $_POST['mail'],
     'mdp' => $_POST['mdp'],
     'naissance' => $_POST['naissance'],
@@ -15,4 +13,5 @@ $ins = new \model\User([
     'ville' => $_POST['ville']
 ]);
 
-$ins -> Incription();
+
+$ins->Inscription();
